@@ -18,3 +18,6 @@ def test_get_airports_coords_5():
 
 def test_get_airports_coords_6():
 	assert get_airports_coords(" ") == "Error"
+	
+def test_get_airports_coords_6():
+	assert get_airports_coords("Boston") == "Error"
