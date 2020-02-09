@@ -46,6 +46,7 @@ def api_id():
     			latitude = coord[0]
     			longitude = coord[1]
     
+    # Call weather API if airport coordinates were successfully found
     if (flag == True):
     	url = "http://api.openweathermap.org/data/2.5/weather?lat=" + str(latitude) + "&lon=" + str(longitude) + "&APPID=4c67e7c09a136bce71be5999f76593cc"
     	json_data = requests.get(url).json()
