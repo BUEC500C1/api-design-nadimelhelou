@@ -12,4 +12,4 @@ In the terminal, run `python api.py` and you should see an output similar to: `R
 
 Enter the displayed url into your browser and you will be taken to the API home page. In order to input an airport, add the following path to the url `/weather`, then either the IATA or the ICAO code as such:
 * `http://127.0.0.1:5000/weather?iata=CDG` if you wish to enter an IATA code (this will return the weather at Paris Charles de Gaulle Airport)
-* `http://127.0.0.1:5000/weather?icao=KBOS` if you wish to enter an IATA code (this will return the weather at Boston Logan International Airport)
+* `http://127.0.0.1:5000/weather?icao=KBOS` if you wish to enter an ICAO code (this will return the weather at Boston Logan International Airport)
