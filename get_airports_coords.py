@@ -11,5 +11,3 @@ def get_airports_coords(airport_code):
 
 	if flag == False:
 		return "Error"
-
-print(get_airports_coords("OOMA"))
