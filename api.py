@@ -14,9 +14,6 @@ app = flask.Flask(__name__)
 app.config["DEBUG"] = True
 
 
-def func1():
-	return 1
-
 @app.route('/', methods=['GET'])
 def home():
     return "<h1>Airport Weather API</h1><p>This API returns the current weather at a given airport. By Nadim El Helou</p>"
