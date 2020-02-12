@@ -9,6 +9,7 @@ import flask
 from flask import request, jsonify
 import csv
 import requests
+from key import api_key
 
 app = flask.Flask(__name__)
 app.config["DEBUG"] = True
@@ -45,7 +46,7 @@ def api_id():
     
     # Call weather API if airport coordinates were successfully found
     if (flag == True):
-    	url = "http://api.openweathermap.org/data/2.5/weather?lat=" + str(latitude) + "&lon=" + str(longitude) + "&APPID=4c67e7c09a136bce71be5999f76593cc"
+    	url = "http://api.openweathermap.org/data/2.5/weather?lat=" + str(latitude) + "&lon=" + str(longitude) + "&APPID=" + api_key
     	data = requests.get(url).json()
     	
     	# return data
